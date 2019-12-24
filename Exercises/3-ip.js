@@ -8,7 +8,7 @@ const ipToInt = (ip = '127.0.0.1') => (
       }
       return item;
     })
-    .reduce((acc, cur) => acc += cur);
+    .reduce((acc, cur) => acc += cur)
 );
 
 module.exports = { ipToInt };

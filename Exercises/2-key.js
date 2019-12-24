@@ -1,9 +1,11 @@
 'use strict';
 
 const generateKey = (length, possible) => {
+  //01234567890123456789
   let str = '';
   for (str = ''; str.length < length; ) {
-    str += possible[Math.floor(Math.random() * length)]
+    const index = Math.floor(Math.random() * length);
+    str = str + possible[index];
   }
   return str;
 };
